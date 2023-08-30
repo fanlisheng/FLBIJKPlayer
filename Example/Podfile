@@ -1,0 +1,6 @@
+use_frameworks!
+target 'FLBIJKPlayer_Tests' do
+  pod 'FLBIJKPlayer', :path => '../'
+  
+  
+end
