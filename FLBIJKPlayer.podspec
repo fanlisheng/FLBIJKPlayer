@@ -24,13 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/fanlisheng/FLBIJKPlayer'
   s.author           = { 'fanlisheng' => '874112968@qq.com' }
   s.license      = "MIT"
-  s.source = { :http => "https://github.com/fanlisheng/FLBIJKPlayer/blob/main/IJKMediaPlayer.tar.gz" }
+  s.source = { :http => "https://github.com/fanlisheng/FLBIJKPlayer/blob/main/IJKMediaPlayer.tar.gz"}
+  s.vendored_frameworks = 'IJKMediaPlayer/Classes/IJKMediaFramework.framework'
   
     #s.source_files = 'Classes/**/*'
     #s.public_header_files = 'Classes/**/*.h'
   
    #s.preserve_paths = 'IJKMediaPlayer/*.framework'
-  s.vendored_frameworks = 'IJKMediaFramework.framework'
+  #s.vendored_frameworks = 'IJKMediaFramework.framework'
    #s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => '"$(PODS_ROOT)/IJKMediaPlayer/"' }
 
   s.platform     = :ios
@@ -40,11 +41,13 @@ TODO: Add long description of the pod here.
   s.libraries   = "bz2", "z", "stdc++"
 
   s.requires_arc = true
+  #s.static_framework = true
 
-  s.prepare_command = <<-CMD
-    tar -xvf ./IJKMediaFramework.tar.xz
-    
-  CMD
+ # s.prepare_command = <<-CMD
+ #   tar -xvf ./IJKMediaPlayer.tar.xz
+ # CMD
+  
+#tar -xvf ./IJKMediaFramework.tar.xz
 
   
   # s.resource_bundles = {
