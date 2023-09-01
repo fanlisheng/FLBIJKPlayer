@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FLBIJKPlayer'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'ijkplayer iOS video player SDK,no openssl'
 
 # This description is used to generate tags and improve search results.
@@ -21,27 +21,28 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/fanlisheng/FLBIJKPlayer'
+  s.homepage         = 'https://github.com/874112968@qq.com/FLBIJKPlayer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   #s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fanlisheng' => '874112968@qq.com' }
-    s.license      = "MIT (example)"
-  # s.source           = { :git => 'https://github.com/fanlisheng/FLBIJKPlayer.git', :tag => s.version.to_s }
+  s.author           = { '874112968@qq.com' => '874112968@qq.com' }
+  #s.license      = "MIT"
+  s.license      = { :type => "GNU Lesser General Public License v3.0", :file => "LICENSE" }
+  s.source           = { :git => 'https://github.com/874112968@qq.com/FLBIJKPlayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source = { :http => "https://github.com/fanlisheng/BijkplayerFork/blob/main/IJKMediaPlayer.tar.gz" }
-  s.vendored_frameworks = 'IJKMediaPlayer.framework'
+     #s.source = { :http => "https://github.com/fanlisheng/FLBIJKPlayer/blob/main/IJKMediaPlayer.tar.gz" }
+   # s.vendored_frameworks = 'IJKMediaPlayer.framework'
   
-  s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
-  s.libraries   = "bz2", "z", "stdc++"
+    #s.frameworks  = "AudioToolbox", "AVFoundation", "CoreGraphics", "CoreMedia", "CoreVideo", "MobileCoreServices", "OpenGLES", "QuartzCore", "VideoToolbox", "Foundation", "UIKit", "MediaPlayer"
+    #s.libraries   = "bz2", "z", "stdc++"
 
-#  s.requires_arc = true
+    #s.requires_arc = true
 
-  s.prepare_command = <<-CMD
-    tar -xvf ./IJKMediaPlayer.tar.xz
-  CMD
+    #s.prepare_command = <<-CMD
+       # tar -xvf ./IJKMediaPlayer.tar.gz
+      #CMD
   
   # s.resource_bundles = {
   #   'FLBIJKPlayer' => ['FLBIJKPlayer/Assets/*.png']
